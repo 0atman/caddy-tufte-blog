@@ -1,0 +1,10 @@
+localhost:2020
+
+gzip
+log access.log
+browse /blog template
+ext .html .md
+
+markdown /blog {
+    css /tufte.css
+}
