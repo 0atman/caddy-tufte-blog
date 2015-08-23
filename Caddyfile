@@ -1,10 +1,14 @@
-localhost:2020
+0.0.0.0:2020
 
 gzip
 log access.log
-browse /blog template
+browse /git/blog template
 ext .html .md
 
-markdown /blog {
+git git@github.com:0atman/caddy-tufte-blog.git git {
+    interval 5
+}
+
+markdown /git/blog {
     css /tufte.css
 }
